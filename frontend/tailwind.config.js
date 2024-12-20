@@ -6,10 +6,11 @@ export default {
       fontFamily: {
         openSans: ["Open Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        sourceCodePro: ["Source Code Pro", "roboto"],
+        sourceCodePro: ["Source Code Pro", "monospace"],
       },
       colors: {
-
+        black: "#000000",
+        white: "#ffffff",
       }
     },
   },
