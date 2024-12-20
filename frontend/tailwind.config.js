@@ -2,7 +2,16 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        openSans: ["Open Sans", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        sourceCodePro: ["Source Code Pro", "roboto"],
+      },
+      colors: {
+
+      }
+    },
   },
   plugins: [],
 }
