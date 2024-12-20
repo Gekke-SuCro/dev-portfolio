@@ -6,16 +6,26 @@
 
 @layer base {
     body {
+        @apply min-h-[100svh];
         @apply font-poppins;
         @apply text-gray-950;
         @apply bg-blue-50;
         @apply leading-relaxed;
         @apply font-normal;
     }
+
+    .h3 {
+        @apply font-bold text-2xl leading-normal;
+    }
 }
 
 @layer utilities {
     .section {
         @apply my-[7rem];
+    }
+
+    .container {
+        @apply flex flex-col justify-between;
+        @apply max-w-[90vw] mx-auto;
     }
 }

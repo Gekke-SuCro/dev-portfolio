@@ -1,34 +1,36 @@
 import {useEffect, useState} from "react";
 
-import "../assets/styles/HomePage.css"
-import ProgrammerImg from "../assets/img/working-at-home.png"
-
-import {fetchJson} from "../utils/jsonFetchUtils.js";
+import {fetchJson} from "../utils/jsonFetchUtils";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About.jsx";
 
 const HomePage = () => {
-    const [personalData, setPersonalData] = useState({});
+    const [personaData, setPersonaData] = useState({
+        fullName: "",
+        branche: ""
+    });
 
     useEffect(() => {
-        const loadPersonalData = async () => {
-            const data = await fetchJson("persona");
-            setPersonalData(data);
+        const loadPersonaData = async () => {
+            try {
+                const data = await fetchJson("persona");
+                setPersonaData(data);
+            } catch (error) {
+                console.error("Error fetching persona data:", error);
+            }
         }
 
-        loadPersonalData();
+        loadPersonaData();
     }, [])
 
     return (
         <>
-            {/* Intro Section */}
-            <section className="section mx-[1rem] text-center">
-                <img
-                    className="max-w-[128px] mx-auto"
-                    src={ProgrammerImg}
-                    alt="Tech Boy"
-                />
-                <h1 className="text-4xl font-bold">{personalData?.fullName}</h1>
-                <p className="text-2xl font-medium">{personalData?.branche}</p>
-            </section>
+            <Hero personaData={personaData} />
+            <About personaData={personaData} />
+
+            {/* Skills* */}
+            {/* Projects* */}
+            {/* Contact* */}
         </>
     )
 }
