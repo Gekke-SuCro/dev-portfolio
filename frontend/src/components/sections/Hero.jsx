@@ -20,6 +20,7 @@ const Hero = ({ personaData }) => {
 
                 {/* Chevron */}
                 <div className="mb-6">
+                    <p className="font-light text-sm mb-6">Transforming ideas into software solutions</p>
                     <img
                         className="w-12 h-12 mx-auto animate-bounce cursor-pointer"
                         src={ChevronSVG}

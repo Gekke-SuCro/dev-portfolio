@@ -8,10 +8,7 @@
     body {
         @apply min-h-[100svh];
         @apply font-poppins;
-        @apply text-gray-950;
-        @apply bg-blue-50;
-        @apply leading-relaxed;
-        @apply font-normal;
+        @apply bg-neutral-100 text-neutral-950 leading-relaxed font-normal;
     }
 
     .h3 {
@@ -25,7 +22,7 @@
     }
 
     .container {
-        @apply flex flex-col justify-between;
+        @apply flex flex-col justify-center;
         @apply max-w-[90vw] mx-auto;
     }
 }
