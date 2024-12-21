@@ -5,6 +5,10 @@
 @import "tailwindcss/utilities";
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         @apply min-h-[100svh];
         @apply font-poppins;

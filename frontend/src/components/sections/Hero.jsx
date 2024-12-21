@@ -4,7 +4,7 @@ import ChevronSVG from "../../assets/img/chevron-down.svg"
 const Hero = ({ personaData }) => {
     return (
         <>
-            <section className="container h-svh text-center">
+            <section id="home" className="container h-svh text-center">
 
                 {/* Intro */}
                 <div className="flex flex-col sm:flex-row-reverse items-center justify-center flex-grow mt-8">
@@ -27,11 +27,13 @@ const Hero = ({ personaData }) => {
                         Transforming ideas into software solutions
                         <span className="text-accent">&#34;</span>
                     </p>
-                    <img
-                        className="w-12 h-12 mx-auto animate-bounce cursor-pointer"
-                        src={ChevronSVG}
-                        alt="Chevron"
-                    />
+                    <a href="#about">
+                        <img
+                            className="w-12 h-12 mx-auto animate-bounce cursor-pointer"
+                            src={ChevronSVG}
+                            alt="Chevron"
+                        />
+                    </a>
                 </div>
             </section>
         </>

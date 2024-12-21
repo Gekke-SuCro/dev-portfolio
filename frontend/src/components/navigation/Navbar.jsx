@@ -1,5 +1,10 @@
 import React, {useEffect, useState} from "react";
 
+const menuItems = [
+    {id: 1, name: "Home", link: "#home"},
+    {id: 2, name: "About", link: "#about"}
+]
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -20,9 +25,15 @@ const Navbar = () => {
                            <i className={`fa-solid ${isOpen ? "fa-bars-staggered" : "fa-bars"} fa-2x`}></i>
                        </button>
                    </div>
-                   <div className={`fixed top-0 ${isOpen ? "left-1/3" : "left-[100vw]"} sm:block transition-all duration-300 bg-white opacity-95 w-2/3 h-full flex flex-col pt-[7rem] px-[2rem]`}>
-                       <ul className={`items-center`}>
-                           Nav list
+                   <div className={`${isOpen ? "left-0" : "left-[100vw]"} max-sm:fixed top-0 left-0
+                   max-sm:w-full h-full max-sm:bg-white max-sm:flex max-sm:flex-col max-sm:items-center`
+                   }>
+                       <ul className={`flex gap-[1rem] max-sm:flex-col items-center max-sm:mt-[7rem]`}>
+                           {menuItems.map((item, i) => (
+                               <li key={i}>
+                                   <a href={`${item?.link}`}>{item?.name}</a>
+                               </li>
+                           ))}
                        </ul>
                    </div>
                </nav>
