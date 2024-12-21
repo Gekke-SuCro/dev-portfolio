@@ -8,11 +8,11 @@ const About = ({ personaData }) => {
        if (personaData && personaData?.birthDate) {
            setAge(calculateAge(personaData?.birthDate));
        }
-    })
+    }, [personaData])
 
     return (
         <>
-            <section className="bg-black text-white py-[5rem] px-[1rem]">
+            <section className="bg-black text-white px-[1rem] py-[7rem] mb-[7rem]">
                 <h3 className="h3 text-center">About me</h3>
                 <p className="text-center">
                     I am a {age ? age : ""} year old software development student from <span className="border-b-2 border-blue-300 border-dotted ">Rhenen</span>.

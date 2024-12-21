@@ -1,11 +1,15 @@
-import { useState } from 'react'
 import HomePage from "./views/HomePage";
+import Footer from "./components/navigation/Footer.jsx";
 
 function App() {
 
   return (
     <>
-     <HomePage />
+     <main>
+         <HomePage />
+     </main>
+
+    <Footer />
     </>
   )
 }
