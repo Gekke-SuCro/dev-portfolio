@@ -23,6 +23,6 @@
 
     .container {
         @apply flex flex-col justify-center w-full;
-        @apply p-[1rem] mx-auto;
+        @apply p-[1rem] sm:p-0 sm:max-w-lg mx-auto;
     }
 }
