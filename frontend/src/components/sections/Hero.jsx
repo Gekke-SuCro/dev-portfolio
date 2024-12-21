@@ -4,7 +4,7 @@ import ChevronSVG from "../../assets/img/chevron-down.svg"
 const Hero = ({ personaData }) => {
     return (
         <>
-            <section className="container h-[100svh] text-center">
+            <section className="container min-h-svh text-center">
 
                 {/* Intro */}
                 <div className="flex flex-col items-center justify-center flex-grow">

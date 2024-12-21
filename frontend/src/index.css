@@ -8,7 +8,7 @@
     body {
         @apply min-h-[100svh];
         @apply font-poppins;
-        @apply bg-neutral-100 text-neutral-950 leading-relaxed font-normal;
+        @apply bg-white text-gray leading-relaxed font-normal;
     }
 
     .h3 {
@@ -18,11 +18,11 @@
 
 @layer utilities {
     .section {
-        @apply my-[7rem];
+        @apply my-[7rem] px-[1rem];
     }
 
     .container {
-        @apply flex flex-col justify-center;
-        @apply max-w-[90vw] mx-auto;
+        @apply flex flex-col justify-center w-full;
+        @apply p-[1rem] mx-auto;
     }
 }

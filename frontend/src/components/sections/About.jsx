@@ -12,7 +12,7 @@ const About = ({ personaData }) => {
 
     return (
         <>
-            <section className="container section">
+            <section className="bg-black text-white py-[5rem] px-[1rem]">
                 <h3 className="h3 text-center">About me</h3>
                 <p className="text-center">
                     I am a {age ? age : ""} year old software development student from <span className="border-b-2 border-blue-300 border-dotted ">Rhenen</span>.

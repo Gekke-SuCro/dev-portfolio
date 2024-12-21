@@ -9,8 +9,11 @@ export default {
         sourceCodePro: ["Source Code Pro", "monospace"],
       },
       colors: {
-        black: "#000000",
-        white: "#ffffff",
+        black: "#20201D",
+        darkGrey: "#2C2C2A",
+        gray: "#3D3D3A",
+        white: "#F9F7EF",
+        accent: "#465356",
       }
     },
   },
