@@ -7,7 +7,7 @@ const Hero = ({ personaData }) => {
             <section className="container h-svh text-center">
 
                 {/* Intro */}
-                <div className="flex flex-col sm:flex-row-reverse items-center justify-center flex-grow">
+                <div className="flex flex-col sm:flex-row-reverse items-center justify-center flex-grow mt-8">
                     <img
                         className="w-40 mx-auto"
                         src={ProgrammerImg}
@@ -16,7 +16,7 @@ const Hero = ({ personaData }) => {
                     <div>
                         <h1 className="text-4xl font-black">{personaData?.fullName}</h1>
                         <p className="text-2xl font-bold">{personaData?.branche}</p>
-                        <button className="mt-6 py-2 px-4 rounded-md bg-accent text-white">Contact me</button>
+                        {/*<button className="mt-6 py-2 px-4 rounded-md bg-accent text-white">Contact me</button>*/}
                     </div>
                 </div>
 
