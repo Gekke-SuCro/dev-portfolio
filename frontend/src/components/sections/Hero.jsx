@@ -13,8 +13,8 @@ const Hero = ({ personaData }) => {
                         alt="Tech Boy"
                     />
                     <div className="text-center">
-                        <h1 className="font-medium text-[10vw] md:text-7xl lg:text-8xl">{personaData?.fullName}</h1>
-                        <p className="font-light text-[7vw] md:text-5xl lg:text-6xl">{personaData?.branche}</p>
+                        <h1 className="font-medium text-4xl">{personaData?.fullName}</h1>
+                        <p className="font-light text-2xl">{personaData?.branche}</p>
                         <button className="mt-6 py-2 px-4 rounded-md bg-accent text-white">Contact me</button>
                     </div>
                 </div>

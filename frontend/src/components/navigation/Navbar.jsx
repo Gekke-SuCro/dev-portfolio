@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import "../../assets/styles/Navbar.css";
 
 const menuItems = [
     {id: 1, name: "Home", link: "#home"},
@@ -15,23 +16,26 @@ const Navbar = () => {
 
     return (
         <>
-           <header className={`z-10 p-[2rem] fixed top-0 left-0 right-0 bg-white`}>
+           <header className={`z-10 px-4 py-4 fixed top-0 left-0 right-0 bg-white`}>
                <nav className="flex justify-between items-center w-full">
                    <div className="z-20">
                        <span className="font-bold text-lg">JR</span>
                    </div>
                    <div className="sm:hidden z-20">
-                       <button onClick={toggle} className="relative">
+                       <button id="menu-toggle" onClick={toggle} className="relative">
                            <i className={`fa-solid ${isOpen ? "fa-bars-staggered" : "fa-bars"} fa-2x`}></i>
                        </button>
                    </div>
-                   <div className={`${isOpen ? "left-0" : "left-[100vw]"} max-sm:fixed top-0 left-0
-                   max-sm:w-full h-full max-sm:bg-white max-sm:flex max-sm:flex-col max-sm:items-center`
+                   <div className={`${isOpen ? "isOpen" : ""} nav-menu max-sm:isMobile`
                    }>
-                       <ul className={`flex gap-[1rem] max-sm:flex-col items-center max-sm:mt-[7rem]`}>
+                       <ul className={`flex gap-[3rem] max-sm:flex-col items-center max-sm:mt-[7rem]`}>
                            {menuItems.map((item, i) => (
                                <li key={i}>
-                                   <a href={`${item?.link}`}>{item?.name}</a>
+                                   <a href={`${item?.link}`} onClick={toggle}>
+                                       <div className="flex flex-col sm:flex-row sm:gap-2 sm:items-center">
+                                           <span className="italic font-light text-sm">0{item.id}</span><h4>{item?.name}</h4>
+                                       </div>
+                                   < /a>
                                </li>
                            ))}
                        </ul>
