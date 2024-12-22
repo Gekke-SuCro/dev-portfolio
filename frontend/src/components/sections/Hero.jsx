@@ -1,22 +1,21 @@
-import ProgrammerImg from "../../assets/img/working-at-home.png"
+import GalleryImg from "../../assets/img/gallery.png"
 import ChevronSVG from "../../assets/img/chevron-down.svg"
 
 const Hero = ({ personaData }) => {
     return (
         <>
-            <section id="home" className="container h-svh text-center">
-
+            <section id="home" className="container h-svh items-center">
                 {/* Intro */}
-                <div className="flex flex-col sm:flex-row-reverse items-center justify-center flex-grow mt-8">
+                <div className="flex flex-col lg:flex-row-reverse md:gap-6 items-center justify-center flex-grow mt-8">
                     <img
-                        className="w-40 mx-auto"
-                        src={ProgrammerImg}
+                        className="w-40 sm:w-60 lg:w-80 mx-auto"
+                        src={GalleryImg}
                         alt="Tech Boy"
                     />
-                    <div>
-                        <h1 className="text-4xl font-black">{personaData?.fullName}</h1>
-                        <p className="text-2xl font-bold">{personaData?.branche}</p>
-                        {/*<button className="mt-6 py-2 px-4 rounded-md bg-accent text-white">Contact me</button>*/}
+                    <div className="text-center">
+                        <h1 className="font-medium text-[10vw] md:text-7xl lg:text-8xl">{personaData?.fullName}</h1>
+                        <p className="font-light text-[7vw] md:text-5xl lg:text-6xl">{personaData?.branche}</p>
+                        <button className="mt-6 py-2 px-4 rounded-md bg-accent text-white">Contact me</button>
                     </div>
                 </div>
 

@@ -17,8 +17,8 @@ const Navbar = () => {
         <>
            <header className={`z-10 p-[2rem] fixed top-0 left-0 right-0 bg-white`}>
                <nav className="flex justify-between items-center w-full">
-                   <div>
-                       Logo
+                   <div className="z-20">
+                       <span className="font-bold text-lg">JR</span>
                    </div>
                    <div className="sm:hidden z-20">
                        <button onClick={toggle} className="relative">

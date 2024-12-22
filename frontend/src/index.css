@@ -12,7 +12,7 @@
     body {
         @apply min-h-[100svh];
         @apply font-poppins;
-        @apply bg-white text-gray leading-relaxed font-normal;
+        @apply bg-white text-grey font-normal leading-tight;
     }
 
     .h3 {
@@ -27,6 +27,6 @@
 
     .container {
         @apply flex flex-col justify-center w-full;
-        @apply p-[1rem] sm:p-0 sm:max-w-lg mx-auto;
+        @apply px-[1rem] sm:px-0 max-w-[1120px] mx-auto;
     }
 }

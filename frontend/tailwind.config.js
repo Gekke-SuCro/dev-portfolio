@@ -11,9 +11,12 @@ export default {
       colors: {
         black: "#20201D",
         darkGrey: "#2C2C2A",
-        gray: "#3D3D3A",
+        grey: "#3D3D3A",
         white: "#F9F7EF",
         accent: "#465356",
+      },
+      spacing: {
+        section: "7rem"
       }
     },
   },
