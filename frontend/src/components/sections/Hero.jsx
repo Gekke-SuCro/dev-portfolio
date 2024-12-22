@@ -6,15 +6,15 @@ const Hero = ({ personaData }) => {
         <>
             <section id="home" className="container h-svh items-center">
                 {/* Intro */}
-                <div className="flex flex-col lg:flex-row-reverse md:gap-6 items-center justify-center flex-grow mt-8">
+                <div className="flex flex-col lg:flex-row-reverse lg:gap-12 xl:gap-24 items-center justify-center flex-grow mt-8">
                     <img
-                        className="w-40 sm:w-60 lg:w-80 mx-auto"
+                        className="w-40 sm:w-60 lg:w-80 xl:w-96 mx-auto"
                         src={GalleryImg}
                         alt="Tech Boy"
                     />
-                    <div className="text-center">
-                        <h1 className="font-medium text-4xl">{personaData?.fullName}</h1>
-                        <p className="font-light text-2xl">{personaData?.branche}</p>
+                    <div className="text-center leading-loose">
+                        <h1 className="font-medium text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">{personaData?.fullName}</h1>
+                        <p className="font-light text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">{personaData?.branche}</p>
                         <button className="mt-6 py-2 px-4 rounded-md bg-accent text-white">Contact me</button>
                     </div>
                 </div>

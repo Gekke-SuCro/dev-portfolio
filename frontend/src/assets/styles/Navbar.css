@@ -10,7 +10,7 @@
 
     .nav-menu.isMobile {
         @apply left-full;
-        @apply bg-accent bg-opacity-75 text-white font-bold text-xl;
+        @apply bg-accent bg-opacity-90 text-white font-bold text-xl;
         @apply fixed top-0 w-2/3 h-full;
         @apply transition-all duration-100 ease-in;
     }

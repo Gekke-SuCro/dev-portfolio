@@ -21,9 +21,9 @@ const Navbar = () => {
         <>
            <header className={`z-10 px-8 py-6 fixed top-0 left-0 right-0 bg-white`}>
                <nav className="flex justify-between items-center w-full">
-                   <div className="z-20">
+                   <a href="#home" className="z-20 cursor-pointer">
                        <span className="font-bold text-lg">JR</span>
-                   </div>
+                   </a>
                    <div className="md:hidden z-20">
                        <button id="menu-toggle" onClick={toggle} className="relative">
                            <i className={`fa-solid ${isOpen ? "fa-bars-staggered" : "fa-bars"} fa-2x`}></i>
