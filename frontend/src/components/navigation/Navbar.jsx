@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <>
-           <header className={`z-10 px-4 py-4 fixed top-0 left-0 right-0 bg-white`}>
+           <header className={`z-10 px-8 py-6 fixed top-0 left-0 right-0 bg-white`}>
                <nav className="flex justify-between items-center w-full">
                    <div className="z-20">
                        <span className="font-bold text-lg">JR</span>
