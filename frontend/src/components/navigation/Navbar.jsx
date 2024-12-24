@@ -10,16 +10,23 @@ const menuItems = [
 ]
 
 const Navbar = () => {
+    let scrollListener = null;
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
 
     useEffect(() => {
+        // noinspection JSVoidFunctionReturnValueUsed
+        scrollListener = document.addEventListener("scroll", (e) => {
+            const scrolled = document.scrollingElement.scrollTop;
+            setIsScrolled(scrolled > 10);
+        });
     }, []);
 
     return (
         <>
-           <header className={`z-10 px-8 py-6 fixed top-0 left-0 right-0 bg-white`}>
+           <header className={`z-10 px-8 py-6 fixed top-0 left-0 right-0 ${isScrolled ? 'bg-white' : ''}`}>
                <nav className="flex justify-between items-center w-full">
                    <a href="#home" className="z-20 cursor-pointer">
                        <span className="font-bold text-lg">JR</span>
@@ -31,7 +38,7 @@ const Navbar = () => {
                    </div>
                    <div className={`${isOpen ? "isOpen" : ""} nav-menu max-md:isMobile`
                    }>
-                       <ul className={`flex gap-[2rem] max-md:flex-col items-center max-md:mt-[7rem] text-center`}>
+                       <ul className={`flex flex-col sm:flex-row flex-wrap gap-[2rem] items-center text-center max-sm:px-8 max-sm:mt-24`}>
                            {menuItems.map((item, i) => (
                                <li key={i}>
                                    <a href={`${item?.link}`} onClick={toggle}>
