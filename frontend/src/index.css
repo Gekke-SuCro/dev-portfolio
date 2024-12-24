@@ -3,30 +3,3 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
-
-@layer base {
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        @apply min-h-[100svh];
-        @apply font-poppins;
-        @apply bg-white text-grey font-normal leading-tight;
-    }
-
-    .h3 {
-        @apply font-bold text-2xl leading-normal;
-    }
-}
-
-@layer utilities {
-    .section {
-        @apply my-[7rem] px-[1rem];
-    }
-
-    .container {
-        @apply flex flex-col justify-center w-full;
-        @apply px-[1rem] sm:px-0 max-w-[1120px] mx-auto;
-    }
-}
