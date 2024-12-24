@@ -20,7 +20,7 @@ const Navbar = () => {
                 <div className={`${isOpen ? "left-1/3" : "left-[200svw]"} transition-all duration-2/00 ease-in 
                 bg-accent bg-opacity-90 fixed top-0 w-2/3 h-full md:relative md:left-0 md:bg-white
                 flex justify-center items-center`}>
-                    <ul className={`flex flex-col flex-wrap px-8 max-md:py-28 items-center justify-center md:justify-end gap-8 w-full h-full
+                    <ul className={`flex flex-col max-md:flex-wrap px-8 max-md:py-28 items-center justify-center md:justify-end gap-8 w-full
                     sm:flex-row`}>
                         {menuItems.map((item) => (
                             <li key={item.id}>
