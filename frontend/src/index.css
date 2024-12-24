@@ -7,5 +7,7 @@
 @layer base {
     body {
         @apply bg-white text-black;
+        @apply font-poppins;
+        @apply min-h-svh;
     }
 }
