@@ -1,12 +1,25 @@
 import "../styles/HomePage.css"
+import Navbar from "../components/Navbar.jsx";
 
 const HomePage = () => {
     return (
         <>
-            <div className="text-center my-[5rem]">
-                <h1 className="text-gray-900 text-5xl">Title</h1>
-                <p className="text-gray-900 text-xl">Short description</p>
-            </div>
+            {/* Navbar */}
+            <Navbar />
+
+            {/* Main content */}
+            <main className="mt-28">
+                {/* Hero */}
+                <section className="section">
+                    <h1 className="font-poppins">Jayden Roeper</h1>
+                    <h2 className="font-sourceCodePro text-accent">Full-stack Developer</h2>
+                </section>
+            </main>
+
+            {/* Footer */}
+            <footer>
+                Footer
+            </footer>
         </>
     )
 }
