@@ -15,7 +15,7 @@ const Navbar = () => {
                     {menuItems.map((item) => (
                         <li key={item.id}>
                             <Link to={`/${item.link}`}>
-                                <h4>{item.name}</h4>
+                                <h4 className="nav-link">{item.name}</h4>
                             </Link>
                         </li>
                     ))}

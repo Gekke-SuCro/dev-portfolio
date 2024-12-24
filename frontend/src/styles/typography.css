@@ -1,0 +1,23 @@
+.text-body {
+    @apply text-base text-black font-poppins;
+}
+
+.text-smaller {
+    @apply text-small text-black font-poppins;
+}
+
+.h1 {
+    @apply text-h1 text-black font-poppins font-bold;
+}
+
+.h2 {
+    @apply text-h2 text-black font-poppins font-bold;
+}
+
+.h3 {
+    @apply text-h3 text-black font-poppins font-medium;
+}
+
+.nav-link {
+    @apply text-nav text-black font-sourceCodePro font-medium hover:text-accent;
+}
