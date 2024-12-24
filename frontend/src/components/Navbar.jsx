@@ -6,8 +6,8 @@ const menuItems = [
     { id: 1, name: "Home", link: "#home" },
     { id: 2, name: "About", link: "#home" },
     { id: 3, name: "Skills", link: "#skills" },
-    { id: 3, name: "Projects", link: "#projects" },
-    { id: 3, name: "Contact", link: "#contact" },
+    { id: 4, name: "Projects", link: "#projects" },
+    { id: 5, name: "Contact", link: "#contact" },
 ]
 
 const Navbar = () => {
@@ -18,8 +18,9 @@ const Navbar = () => {
             <nav className="flex items-center justify-between">
                 <div className="font-bold text-xl">Logo</div>
                 <div className={`${isOpen ? "left-1/3" : "left-[200svw]"} transition-all duration-2/00 ease-in 
-                bg-accent bg-opacity-90 fixed top-0 w-2/3 h-full md:relative md:left-0 md:bg-white`}>
-                    <ul className={`flex flex-col flex-wrap px-8 py-28 items-center justify-center gap-8 w-full h-full
+                bg-accent bg-opacity-90 fixed top-0 w-2/3 h-full md:relative md:left-0 md:bg-white
+                flex justify-center items-center`}>
+                    <ul className={`flex flex-col flex-wrap px-8 max-md:py-28 items-center justify-center md:justify-end gap-8 w-full h-full
                     sm:flex-row`}>
                         {menuItems.map((item) => (
                             <li key={item.id}>
