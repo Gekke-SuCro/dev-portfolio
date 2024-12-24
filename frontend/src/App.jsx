@@ -1,11 +1,21 @@
-import { useState } from 'react'
 import HomePage from "./views/HomePage";
+import Footer from "./components/navigation/Footer";
+import Navbar from "./components/navigation/Navbar";
 
 function App() {
 
   return (
     <>
-     <HomePage />
+        {/* Navbar */}
+        <Navbar />
+
+        {/* Main Content */}
+        <main>
+            <HomePage />
+        </main>
+
+        {/* Footer */}
+        <Footer />
     </>
   )
 }
