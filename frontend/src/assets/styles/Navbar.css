@@ -6,7 +6,19 @@
     }
 
     .menu-list {
-        @apply flex flex-col items-center justify-center gap-8 h-full;
+        @apply flex flex-col flex-wrap items-center justify-center gap-8 h-full text-center p-16;
+    }
+
+    .menu-item {
+        @apply text-white font-poppins text-lg font-bold;
+    }
+
+    .menu-item h4 {
+        @apply flex flex-col;
+    }
+
+    .menu-item h4 span {
+        @apply text-black font-normal italic;
     }
 
     .menu-toggle {
@@ -19,7 +31,19 @@
         }
 
         .menu-list {
-            @apply flex-row justify-end gap-4;
+            @apply flex-row justify-end gap-4 p-0;
+        }
+
+        .menu-item {
+            @apply text-black;
+        }
+
+        .menu-item h4 {
+            @apply font-normal flex-row gap-2;
+        }
+
+        .menu-item h4 span {
+            @apply font-bold not-italic text-accent;
         }
 
         .menu-toggle {

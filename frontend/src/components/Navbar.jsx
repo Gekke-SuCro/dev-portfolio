@@ -15,19 +15,19 @@ const Navbar = () => {
             <div>Logo</div>
             <div className={`menu-container transform ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
                 <ul className="menu-list">
-                    {menuItems.map((item) => (<li key={item.id}>
-                        <Link to={item.link}>
-                            <h4 className="responsive-menu-item">
-                                        <span className="responsive-menu-link">
-                                            0{item.id}
-                                        </span>{" "}
-                                {item.name}
-                            </h4>
-                        </Link>
-                    </li>))}
+                    {menuItems.map((item) => (
+                        <li className="menu-item" key={item.id}>
+                            <Link to={item.link}>
+                                <h4>
+                                    <span>0{item.id}</span>{" "}{item.name}
+                                </h4>
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
-            <button className={`menu-toggle ${isOpen ? "text-white" : "text-black"}`} onClick={() => setIsOpen(!isOpen)}>
+            <button className={`menu-toggle ${isOpen ? "text-white" : "text-black"}`}
+                    onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? <RiMenu3Line size={40}/> : <RiMenuFill size={40}/>}
             </button>
         </navbar>
