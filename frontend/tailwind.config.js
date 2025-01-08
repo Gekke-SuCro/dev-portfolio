@@ -20,6 +20,12 @@ export default {
         white: '#ffffff',
         accent: '#828f8f',
       },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
       spacing: {
         section: ["7rem", "112px"]
       }
