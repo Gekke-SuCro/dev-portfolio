@@ -1,11 +1,15 @@
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import {RiMenuFill, RiMenu3Line} from "react-icons/ri";
-import "../assets/styles/Navbar.css"
+import "../../assets/styles/components/layout/Navbar.css"
 
-const menuItems = [{id: 1, name: "Home", link: "#home"}, {id: 2, name: "About", link: "#home"}, {
-    id: 3, name: "Skills", link: "#skills"
-}, {id: 4, name: "Projects", link: "#projects"}, {id: 5, name: "Contact", link: "#contact"},]
+const menuItems = [
+    {id: 1, name: "Home", link: "#home"},
+    {id: 2, name: "About", link: "#home"},
+    {id: 3, name: "Skills", link: "#skills"},
+    {id: 4, name: "Projects", link: "#projects"},
+    {id: 5, name: "Contact", link: "#contact"},
+]
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

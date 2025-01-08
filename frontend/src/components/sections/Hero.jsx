@@ -1,4 +1,4 @@
-import Gallery from "../assets/img/gallery.png"
+import Gallery from "../../assets/img/gallery.png"
 import { IoChevronDownCircleOutline } from "react-icons/io5";
 
 // eslint-disable-next-line react/prop-types
@@ -25,7 +25,7 @@ const Hero = () => {
                     <HeroButton text="Projects"/>
                 </div>
             </div>
-            <div className="mb-2">
+            <div className="mb-6">
                 <IoChevronDownCircleOutline size={32} className="mx-auto"/>
             </div>
         </>

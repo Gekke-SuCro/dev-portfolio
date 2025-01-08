@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import "../assets/styles/HomePage.css"
+import Navbar from "../components/layout/Navbar";
+import Hero from "../components/sections/Hero";
+import "../assets/styles/views/HomePage.css"
 
 const HomePage = () => {
     return (

@@ -31,7 +31,7 @@
         }
 
         .menu-list {
-            @apply flex-row justify-end gap-4 p-0;
+            @apply flex-row justify-end gap-8 p-0;
         }
 
         .menu-item {
