@@ -1,7 +1,7 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import HomePage from "./views/HomePage";
-import './styles/layout.css'
-import './styles/typography.css'
+import './assets/styles/layout.css'
+import './assets/styles/typography.css'
 
 const router = createBrowserRouter([
     {

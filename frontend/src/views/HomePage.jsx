@@ -1,5 +1,6 @@
-import "../styles/HomePage.css"
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import "../assets/styles/HomePage.css"
 
 const HomePage = () => {
     return (
@@ -8,11 +9,10 @@ const HomePage = () => {
             <Navbar />
 
             {/* Main content */}
-            <main className="mt-28">
+            <main>
                 {/* Hero */}
-                <section className="section">
-                    <h1 className="font-poppins">Jayden Roeper</h1>
-                    <h2 className="font-sourceCodePro text-accent">Full-stack Developer</h2>
+                <section className="section flex flex-col gap-4 h-svh">
+                    <Hero />
                 </section>
             </main>
 

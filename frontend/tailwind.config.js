@@ -19,6 +19,9 @@ export default {
         black: '#000000',
         white: '#ffffff',
         accent: '#828f8f',
+      },
+      spacing: {
+        section: ["7rem", "112px"]
       }
     },
   },
